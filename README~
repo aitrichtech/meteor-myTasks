@@ -1,5 +1,0 @@
-My Task Task manager is used to save and manage tasks in server. Tasks can be added directly from home page. All the taks and their status are listed and their status will be showed. Application uses TaskList Collection for storing tasks.
-
-App completely developed using Meteor platform>
-Router - Iron - Router
-
