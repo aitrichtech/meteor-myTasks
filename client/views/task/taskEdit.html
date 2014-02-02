@@ -1,0 +1,28 @@
+<!-- Modal -->
+<template name="taskEditForm">
+	<div id="editForm" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+				×
+			</button>
+			<h3 id="myModalLabel">Edit Task</h3>
+		</div>
+		<div class="modal-body">
+			<input class="span5" id="txttask" type="text" value="{{task.title}}">
+			<input type="date" id="txteditduedate" class="input-medium" value="{{task.duedate}}">
+			<select id="selStatus">
+				<option {{selected task.status "Active"}}>Active</option>
+				<option {{selected task.status "Completed"}}>Completed</option>
+				<option {{selected task.status "Cancelled"}}>Cancelled</option>
+			</select>
+		</div>
+		<div class="modal-footer">
+			<button id="btnClose" class="btn" aria-hidden="true">
+				Close
+			</button>
+			<button id="btnSave" class="btn btn-primary" id="btnSubmitUpdate">
+				Save changes
+			</button>
+		</div>
+	</div>
+</template>

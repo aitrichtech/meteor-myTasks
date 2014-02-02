@@ -1,0 +1,5 @@
+.table tbody tr > td.striked {
+  background-image: url(/img/strike.png);
+  background-repeat:repeat-x;
+  background-position:left 9px;
+}
